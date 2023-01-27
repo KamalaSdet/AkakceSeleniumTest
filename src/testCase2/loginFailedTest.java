@@ -34,7 +34,7 @@ public class loginFailedTest extends BaseDriver {
         WebElement signInControl = driver.findElement(By.cssSelector("[class='alertX t2']>p"));
         wait.until(ExpectedConditions.textToBePresentInElement(signInControl, "Şifre doğru değil"));
         System.out.println(signInControl.getText());
-        Assert.assertTrue("Test failed", signInControl.getText().toLowerCase().contains("Şifre doğru değil"));
+        Assert.assertTrue("Test failed", signInControl.getText().toLowerCase().contains("şifre doğru değil"));
 
 
     }
